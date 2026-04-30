@@ -44,10 +44,6 @@ rag-app/
 ├── data/
 │   └── documents.txt        # Input text data
 │
-├── db/                      # Generated (ignored in git)
-│   ├── index.faiss
-│   └── metadata.pkl
-│
 ├── rag_utils.py             # Chunking, indexing, retrieval, reranking
 ├── ingest.py                # Builds vector index
 ├── query.py                 # CLI interface for querying
@@ -182,7 +178,8 @@ MODEL_NAME = "llama3"
 ---
 
 ## ⚠️ Notes
-
+* The vector database (`db/`) is generated locally by running:
+    python ingest.py
 * Run `ingest.py` before querying
 * Ollama must be running locally
 * Hugging Face warnings (tokens/symlinks) can be ignored
