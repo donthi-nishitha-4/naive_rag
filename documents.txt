@@ -1,0 +1,5 @@
+RAG stands for Retrieval Augmented Generation.
+It combines retrieval systems with language models.
+FAISS is used for similarity search.
+Embeddings convert text into vectors.
+This is a NAIVE RAG.
